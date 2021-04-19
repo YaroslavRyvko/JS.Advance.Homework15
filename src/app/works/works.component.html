@@ -1,0 +1,16 @@
+<ul class="nav nav-tabs">
+  <li class="last-works">Last works >>> </li>
+  <li class="nav-item">
+    <button class="nav-link active" [class.active] = "cenzor" focus data-bs-toggle="tab" type="button" [routerLink]="[ 'cenzor']">Cenzor</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" [class.active] = "task"  data-bs-toggle="tab" type="button" [routerLink]="[ 'tasklist']">Task</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" [class.active] = "users"  data-bs-toggle="tab" type="button" [routerLink]="[ 'userslist']">Users</button>
+  </li>
+  <li class="nav-item back-home">
+    <button class="nav-link" nav-link [routerLink]="['/home']" style="color: rgb(255, 38, 0);">Back to >>> Home</button>
+  </li>
+</ul>
+<router-outlet></router-outlet>

@@ -1,0 +1,37 @@
+.block {
+  width: 370px;
+  height: 330px;
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 4px;
+  background-color: rgb(236, 231, 231);
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  height: 76vh;
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+  border-bottom: 1px solid rgb(129, 129, 129);
+  background-size: cover;
+  background-position: center;
+}
+
+.cenzor {
+  background-image: url('../images/cenzor.png');
+}
+.task-list{
+    background-image: url('../images/task-list.png');
+}
+.user-list{
+  background-image: url('../images/user-list.png');
+}
+
+button {
+  margin-top: 3%;
+  width: 90%;
+  height: 14%;
+}

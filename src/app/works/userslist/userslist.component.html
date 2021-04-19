@@ -1,0 +1,39 @@
+<div class="box">
+  <div class="container">
+    <form name="f1">
+      <p>Login</p>
+      <input type="text" class="form-control" placeholder="Enter login" [(ngModel)]="userlogin" name="userlogin">
+      <p>Password</p>
+      <input type="text" class="form-control" placeholder="Enter password" [(ngModel)]="userpassword"
+        name="userpassword">
+      <p>Email address</p>
+      <input type="text" class="form-control" placeholder="Enter email" [(ngModel)]="useremail" name="useremail">
+      <input type="button" class="btn btn-success" style="width: 100%" value="Add User" (click)="addUser()"
+        *ngIf="!editstatus">
+      <input type="button" class="btn btn-success" style="width: 100%" value="Edit User" (click)="saveUser()"
+        *ngIf="editstatus">
+    </form>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Login</th>
+        <th scope="col">Password</th>
+        <th scope="col">Email</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users, index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{user.userlogin}}</td>
+        <td>{{user.userpassword}}</td>
+        <td>{{user.useremail}}</td>
+        <td><button type="button" class="btn btn-warning" (click)="editUser(i)">Edit</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteUser(i)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

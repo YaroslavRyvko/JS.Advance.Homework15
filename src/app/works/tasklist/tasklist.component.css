@@ -1,0 +1,18 @@
+h1{
+    height: 46px;
+
+}
+
+th{
+    line-height: 45px;
+    font-size: 18px;
+}
+.lineheight{
+    line-height: 54px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+tbody tr:hover{
+    background-color: lightgray;
+}

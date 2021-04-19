@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+.main-block {
+    margin: 100px auto;
+    width: 532px;
+    height: 290px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.bad-words {
+    color: red;
+    font-weight: bold;
+}
+
+.input-words {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter {
+    width: 310px;
+}
+
+.btn-warning,
+.btn-danger {
+    width: 84px;
+}
+
+.textarea {
+    margin-top: 20px;
+    padding: 14px 12px;
+    width: 500px;
+    height: 120px;
+    resize: none;
+}
+
+.cenzor-btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.invalid{
+    border-color: red;
+}
